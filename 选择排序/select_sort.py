@@ -9,8 +9,8 @@ def select_sort(seq):
 		for j in range(i+1, n):
 			if seq[j] < seq[min_idx]:
 				min_idx = j
-			if min_idx != i:
-				seq[i], seq[min_idx] = seq[min_idx], seq[i]
+		if min_idx != i:
+			seq[i], seq[min_idx] = seq[min_idx], seq[i]
 	print(seq)
 	return min_idx
 
